@@ -92,7 +92,7 @@ extension WWMarkdownWebViewUI.Coordinator {
         guard let payload = Self.makeJSONArgument(markdown) else { return }
         
         let js = """
-        \(textStyle.script());
+        \(textStyle.script);
         window.renderMarkdown(\(payload));
         """
         

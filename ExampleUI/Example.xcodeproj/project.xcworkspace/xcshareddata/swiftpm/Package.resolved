@@ -1,0 +1,15 @@
+{
+  "originHash" : "1fdc80077773e6e278b90633d7b6599ec483cb68832880886ee5d61476328f9f",
+  "pins" : [
+    {
+      "identity" : "wwmarkdownwebviewui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWMarkdownWebViewUI",
+      "state" : {
+        "revision" : "d54a88e04b8b49e023a0e5ccd691d163b27c155c",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

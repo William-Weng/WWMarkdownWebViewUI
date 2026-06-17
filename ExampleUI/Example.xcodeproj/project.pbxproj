@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		816D8D352FE29F9E0098706E /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 816D8D342FE29F9E0098706E /* WWMarkdownWebViewUI */; };
+		816D8D382FE2A0A10098706E /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 816D8D372FE2A0A10098706E /* WWMarkdownWebViewUI */; };
 		818C72862FE28F7200FDA881 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 818C72852FE28F7200FDA881 /* WWMarkdownWebViewUI */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				818C72862FE28F7200FDA881 /* WWMarkdownWebViewUI in Frameworks */,
+				816D8D352FE29F9E0098706E /* WWMarkdownWebViewUI in Frameworks */,
+				816D8D382FE2A0A10098706E /* WWMarkdownWebViewUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,8 @@
 			name = Example;
 			packageProductDependencies = (
 				818C72852FE28F7200FDA881 /* WWMarkdownWebViewUI */,
+				816D8D342FE29F9E0098706E /* WWMarkdownWebViewUI */,
+				816D8D372FE2A0A10098706E /* WWMarkdownWebViewUI */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -101,7 +107,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				818C72842FE28F7200FDA881 /* XCLocalSwiftPackageReference "../../@WWMarkdownWebViewUI" */,
+				816D8D362FE2A0A10098706E /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -344,14 +350,27 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		818C72842FE28F7200FDA881 /* XCLocalSwiftPackageReference "../../@WWMarkdownWebViewUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../@WWMarkdownWebViewUI";
+/* Begin XCRemoteSwiftPackageReference section */
+		816D8D362FE2A0A10098706E /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWMarkdownWebViewUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		816D8D342FE29F9E0098706E /* WWMarkdownWebViewUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WWMarkdownWebViewUI;
+		};
+		816D8D372FE2A0A10098706E /* WWMarkdownWebViewUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 816D8D362FE2A0A10098706E /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */;
+			productName = WWMarkdownWebViewUI;
+		};
 		818C72852FE28F7200FDA881 /* WWMarkdownWebViewUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWMarkdownWebViewUI;
