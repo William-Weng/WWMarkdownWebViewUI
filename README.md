@@ -11,7 +11,7 @@
 
 一個輕量級的 Swift Package，使用 `WKWebView` 在 SwiftUI 中渲染 Markdown，支援動態高度，並盡量維持整合簡潔。
 
-![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/5a10b170-23a8-4da1-9742-053f1f6028ec)
+![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/be34b29d-2b2b-4f7e-853b-c701b8a50ede)
 
 ## ✨ [功能特色](https://peterpanswift.github.io/iphone-bezels/)
 
@@ -28,7 +28,7 @@
 或者加入到 `Package.swift`：
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.1.1")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.2.0")
 ```
 
 然後把產品加入 target dependencies：

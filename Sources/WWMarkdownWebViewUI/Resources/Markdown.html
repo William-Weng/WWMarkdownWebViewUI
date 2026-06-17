@@ -116,7 +116,7 @@
         }
 
         function renderMarkdown(markdown) {
-            const lines = markdown.split("\\n");
+            const lines = markdown.split(/\r?\n/);
             let html = "";
             let inUL = false;
             let inOL = false;
@@ -183,26 +183,25 @@
                     continue;
                 }
 
-                if (/^\\d+\\.\\s+/.test(line)) {
+                if (/^(\d+)\.\s+/.test(line)) {
                     if (!inOL) {
-                        closeLists();
-                        html += "<ol>";
-                        inOL = true;
+                        closeLists()
+                        html += "<ol>"
+                        inOL = true
                     }
-                    html += "<li>" + parseInline(line.replace(/^\\d+\\.\\s+/, "")) + "</li>";
-                    continue;
+                    html += "<li>" + parseInline(line.replace(/^\d+\.\s+/, "")) + "</li>"
+                    continue
                 }
 
-                if (line.startsWith("- ") || line.startsWith("* ")) {
+                if (/^[-*]\s+/.test(line)) {
                     if (!inUL) {
-                        closeLists();
-                        html += "<ul>";
-                        inUL = true;
+                        closeLists()
+                        html += "<ul>"
+                        inUL = true
                     }
-                    html += "<li>" + parseInline(line.slice(2)) + "</li>";
-                    continue;
+                    html += "<li>" + parseInline(line.replace(/^[-*]\s+/, "")) + "</li>"
+                    continue
                 }
-
                 closeLists();
                 html += "<p>" + parseInline(line) + "</p>";
             }
