@@ -59,9 +59,9 @@ public extension WWMarkdownWebViewUI.Coordinator {
 
         Task { @MainActor in
             
-            if let height = message.body as? CGFloat { self.parent.dynamicHeight = height; return }
-            if let height = message.body as? Double { self.parent.dynamicHeight = height; return }
-            if let height = message.body as? Int { self.parent.dynamicHeight = CGFloat(height); return }
+            if let height = message.body as? CGFloat { self.parent.height = height; return }
+            if let height = message.body as? Double { self.parent.height = height; return }
+            if let height = message.body as? Int { self.parent.height = CGFloat(height); return }
         }
     }
 }

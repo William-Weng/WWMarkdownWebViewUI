@@ -1,5 +1,5 @@
 //
-//  WeakScriptMessageHandler.swift
+//  Handler.swift
 //  WWMarkdownWebViewUI
 //
 //  Created by William.Weng on 2026/6/17.

@@ -18,7 +18,9 @@ public struct WWMarkdownWebViewUI {
     let markdown: String
     
     @Binding var textStyle: TextStyle
-    @Binding var dynamicHeight: CGFloat
+    @Binding var height: CGFloat
+    
+    @ObservedObject var manager = Manager()
     
     /// 建立 Markdown WebView
     ///
@@ -26,10 +28,12 @@ public struct WWMarkdownWebViewUI {
     ///   - markdown: 要渲染的 Markdown 字串
     ///   - dynamicHeight: WebView 實際內容高度，透過 Coordinator 回寫給 SwiftUI
     ///   - textStyle: 文字風格
-    public init(markdown: String, dynamicHeight: Binding<CGFloat>, textStyle: Binding<TextStyle> = .constant(.light)) {
+    ///   - manager: WebView取值管理器
+    public init(markdown: String, height: Binding<CGFloat>, textStyle: Binding<TextStyle> = .constant(.light), manager: Manager = .init()) {
         self.markdown = markdown
+        self.manager = manager
         _textStyle = textStyle
-        _dynamicHeight = dynamicHeight
+        _height = height
     }
 }
 
@@ -49,10 +53,12 @@ public extension WWMarkdownWebViewUI {
     /// - 註冊 JavaScript message handler
     /// - 設定 navigationDelegate
     /// - 載入初始 HTML template
-    public func makeUIView(context: Context) -> WKWebView {
+    func makeUIView(context: Context) -> WKWebView {
         
         let webView = makeWebView(coordinator: context.coordinator)
+        
         context.coordinator.webView = webView
+        Task { @MainActor in manager.webView = webView }
         
         return webView
     }

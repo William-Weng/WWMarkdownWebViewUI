@@ -10,8 +10,7 @@
             --font-size: 17px;
         }
 
-        html,
-        body {
+        html, body {
             margin: 0;
             padding: 0;
             background: transparent;
@@ -30,9 +29,7 @@
             margin: 0 0 18px 0;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             margin: 28px 0 16px;
             line-height: 1.3;
             font-weight: 700;
@@ -58,8 +55,7 @@
             font-size: 0.95em;
         }
 
-        ul,
-        ol {
+        ul, ol {
             margin: 0 0 18px 0;
             padding-left: 1.4em;
         }
@@ -164,6 +160,18 @@
                     closeLists();
                     continue;
                 }
+        
+                if (line.startsWith("##### ")) {
+                    closeLists();
+                    html += "<h5>" + parseInline(line.slice(6)) + "</h5>";
+                    continue;
+                }
+                
+                if (line.startsWith("#### ")) {
+                    closeLists();
+                    html += "<h4>" + parseInline(line.slice(5)) + "</h4>";
+                    continue;
+                }
 
                 if (line.startsWith("### ")) {
                     closeLists();
@@ -223,6 +231,16 @@
         function setTextStyle(color, size) {
             document.documentElement.style.setProperty('--text', color);
             document.documentElement.style.setProperty('--font-size', size + 'px');
+        }
+        
+        function getTextContent() {
+            const content = document.getElementById("content");
+            return content ? content.innerText : "";
+        }
+        
+        function getHtmlContent() {
+            const content = document.getElementById("content");
+            return content ? content.innerHTML : "";
         }
         
         window.renderMarkdown = renderMarkdown;

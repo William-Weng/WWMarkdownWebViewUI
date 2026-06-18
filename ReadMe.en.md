@@ -11,7 +11,7 @@
 
 A lightweight Swift Package that renders Markdown with `WKWebView` inside SwiftUI, supports dynamic height, and keeps the integration simple.
 
-![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/be34b29d-2b2b-4f7e-853b-c701b8a50ede)
+![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/9177518a-a1b3-4129-b05b-a1dc435571c9)
 
 ## [✨ Features](https://peterpanswift.github.io/iphone-bezels/)
 
@@ -28,7 +28,7 @@ Add the package in Xcode with **File > Add Package Dependencies...** and point i
 Or add it to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.2.0")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.0")
 ```
 
 Then add the product to your target dependencies:
