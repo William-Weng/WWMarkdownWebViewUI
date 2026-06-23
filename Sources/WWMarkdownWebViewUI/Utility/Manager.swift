@@ -11,9 +11,10 @@ import WebKit
 // 管理 WebView 和 JS 結果的 ObservableObject
 public extension WWMarkdownWebViewUI {
     
-    final class Manager: ObservableObject {
+    @Observable
+    final class Manager {
         
-        @Published public var webView: WKWebView?
+        public var webView: WKWebView?
         
         public init() {}
     }

@@ -28,6 +28,7 @@ struct ContentView: View {
     var body: some View {
         WWMarkdownWebViewUI(markdown: markdown, height: $height)
             .frame(height: height)
+            .padding(16)
     }
 }
 

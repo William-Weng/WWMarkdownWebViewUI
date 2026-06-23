@@ -20,7 +20,7 @@ public struct WWMarkdownWebViewUI {
     @Binding var textStyle: TextStyle
     @Binding var height: CGFloat
     
-    @ObservedObject var manager = Manager()
+    @State var manager = Manager()
     
     /// 建立 Markdown WebView
     ///

@@ -3,15 +3,15 @@
 # [WWMarkdownWebViewUI](https://swiftpackageindex.com/William-Weng)
 
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-524520?logo=swift)
-[![Swift-5.7](https://img.shields.io/badge/Swift-5.7-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![iOS-16.0](https://img.shields.io/badge/iOS-16.0-pink.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift-5.10](https://img.shields.io/badge/Swift-5.10-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![iOS-17.0](https://img.shields.io/badge/iOS-17.0-pink.svg?style=flat)](https://developer.apple.com/swift/)
 ![TAG](https://img.shields.io/github/v/tag/William-Weng/WWMarkdownWebViewUI)
 [![Swift Package Manager-SUCCESS](https://img.shields.io/badge/Swift_Package_Manager-SUCCESS-blue.svg?style=flat)](https://developer.apple.com/swift/)
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-yellow.svg?style=flat)](https://developer.apple.com/swift/)
 
 一個輕量級的 Swift Package，使用 `WKWebView` 在 SwiftUI 中渲染 Markdown，支援動態高度，並盡量維持整合簡潔。
 
-![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/9177518a-a1b3-4129-b05b-a1dc435571c9)
+![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/c4aaf16d-bc4e-4f7a-b705-1ab9bcebd883)
 
 ## ✨ [功能特色](https://peterpanswift.github.io/iphone-bezels/)
 
@@ -28,7 +28,7 @@
 或者加入到 `Package.swift`：
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.0")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.1")
 ```
 
 然後把產品加入 target dependencies：
@@ -65,6 +65,7 @@ struct ContentView: View {
     var body: some View {
         WWMarkdownWebViewUI(markdown: markdown, dynamicHeight: $height)
             .frame(height: height)
+            .padding(16)
     }
 }
 ```
