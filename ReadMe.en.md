@@ -28,7 +28,7 @@ Add the package in Xcode with **File > Add Package Dependencies...** and point i
 Or add it to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.1")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.2")
 ```
 
 Then add the product to your target dependencies:

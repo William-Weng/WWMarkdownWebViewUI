@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		810C80F02FE2A42C001DF6D9 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 810C80EF2FE2A42C001DF6D9 /* WWMarkdownWebViewUI */; };
+		815E12792FED16AD00865A0C /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 815E12782FED16AD00865A0C /* WWMarkdownWebViewUI */; };
+		815E127C2FED16ED00865A0C /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 815E127B2FED16ED00865A0C /* WWMarkdownWebViewUI */; };
 		81637FC52FEA754E00028503 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81637FC42FEA754E00028503 /* WWMarkdownWebViewUI */; };
 		81637FCF2FEA764D00028503 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81637FCE2FEA764D00028503 /* WWMarkdownWebViewUI */; };
 		81637FD22FEA775F00028503 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81637FD12FEA775F00028503 /* WWMarkdownWebViewUI */; };
-		81637FD52FEA778300028503 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81637FD42FEA778300028503 /* WWMarkdownWebViewUI */; };
 		816D8D352FE29F9E0098706E /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 816D8D342FE29F9E0098706E /* WWMarkdownWebViewUI */; };
 		816EA5D42FE3C53000AB97BF /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 816EA5D32FE3C53000AB97BF /* WWMarkdownWebViewUI */; };
 		818C72862FE28F7200FDA881 /* WWMarkdownWebViewUI in Frameworks */ = {isa = PBXBuildFile; productRef = 818C72852FE28F7200FDA881 /* WWMarkdownWebViewUI */; };
@@ -37,11 +38,12 @@
 				818C72862FE28F7200FDA881 /* WWMarkdownWebViewUI in Frameworks */,
 				81637FD22FEA775F00028503 /* WWMarkdownWebViewUI in Frameworks */,
 				816D8D352FE29F9E0098706E /* WWMarkdownWebViewUI in Frameworks */,
-				81637FD52FEA778300028503 /* WWMarkdownWebViewUI in Frameworks */,
+				815E12792FED16AD00865A0C /* WWMarkdownWebViewUI in Frameworks */,
 				810C80F02FE2A42C001DF6D9 /* WWMarkdownWebViewUI in Frameworks */,
 				816EA5D42FE3C53000AB97BF /* WWMarkdownWebViewUI in Frameworks */,
 				81637FC52FEA754E00028503 /* WWMarkdownWebViewUI in Frameworks */,
 				81637FCF2FEA764D00028503 /* WWMarkdownWebViewUI in Frameworks */,
+				815E127C2FED16ED00865A0C /* WWMarkdownWebViewUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +93,8 @@
 				81637FC42FEA754E00028503 /* WWMarkdownWebViewUI */,
 				81637FCE2FEA764D00028503 /* WWMarkdownWebViewUI */,
 				81637FD12FEA775F00028503 /* WWMarkdownWebViewUI */,
-				81637FD42FEA778300028503 /* WWMarkdownWebViewUI */,
+				815E12782FED16AD00865A0C /* WWMarkdownWebViewUI */,
+				815E127B2FED16ED00865A0C /* WWMarkdownWebViewUI */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -122,7 +125,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				81637FD32FEA778300028503 /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */,
+				815E127A2FED16ED00865A0C /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -366,12 +369,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		81637FD32FEA778300028503 /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */ = {
+		815E127A2FED16ED00865A0C /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWMarkdownWebViewUI";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 0.3.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -379,6 +382,15 @@
 /* Begin XCSwiftPackageProductDependency section */
 		810C80EF2FE2A42C001DF6D9 /* WWMarkdownWebViewUI */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = WWMarkdownWebViewUI;
+		};
+		815E12782FED16AD00865A0C /* WWMarkdownWebViewUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WWMarkdownWebViewUI;
+		};
+		815E127B2FED16ED00865A0C /* WWMarkdownWebViewUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 815E127A2FED16ED00865A0C /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */;
 			productName = WWMarkdownWebViewUI;
 		};
 		81637FC42FEA754E00028503 /* WWMarkdownWebViewUI */ = {
@@ -391,11 +403,6 @@
 		};
 		81637FD12FEA775F00028503 /* WWMarkdownWebViewUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = WWMarkdownWebViewUI;
-		};
-		81637FD42FEA778300028503 /* WWMarkdownWebViewUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81637FD32FEA778300028503 /* XCRemoteSwiftPackageReference "WWMarkdownWebViewUI" */;
 			productName = WWMarkdownWebViewUI;
 		};
 		816D8D342FE29F9E0098706E /* WWMarkdownWebViewUI */ = {

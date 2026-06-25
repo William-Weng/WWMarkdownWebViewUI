@@ -81,7 +81,7 @@ private extension WWMarkdownWebViewUI {
     /// `Bundle.module` 是 Swift Package 存取資源的標準方式
     static func readHtmlTemplate() -> String? {
         
-        guard let url = Bundle.module.url(forResource: "Markdown", withExtension: "html"),
+        guard let url = Bundle.module.url(forResource: "markdown", withExtension: "html"),
               let html = try? String(contentsOf: url, encoding: .utf8)
         else {
             return nil
