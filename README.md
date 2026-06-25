@@ -1,4 +1,4 @@
-[English](./ReadMe.en.md) | [繁體中文](./ReadMe.md)
+[English](./ReadMe.en.md) | [繁體中文](./README.md)
 
 # [WWMarkdownWebViewUI](https://swiftpackageindex.com/William-Weng)
 
