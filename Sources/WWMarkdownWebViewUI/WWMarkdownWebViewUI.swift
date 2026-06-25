@@ -17,7 +17,6 @@ public struct WWMarkdownWebViewUI {
     
     let markdown: String
     
-    @Binding var textStyle: TextStyle
     @Binding var height: CGFloat
     
     @State var manager = Manager()
@@ -27,12 +26,10 @@ public struct WWMarkdownWebViewUI {
     /// - Parameters:
     ///   - markdown: 要渲染的 Markdown 字串
     ///   - dynamicHeight: WebView 實際內容高度，透過 Coordinator 回寫給 SwiftUI
-    ///   - textStyle: 文字風格
     ///   - manager: WebView取值管理器
-    public init(markdown: String, height: Binding<CGFloat>, textStyle: Binding<TextStyle> = .constant(.light), manager: Manager = .init()) {
+    public init(markdown: String, height: Binding<CGFloat>, manager: Manager = .init()) {
         self.markdown = markdown
         self.manager = manager
-        _textStyle = textStyle
         _height = height
     }
 }

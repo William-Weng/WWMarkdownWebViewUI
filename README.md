@@ -28,7 +28,7 @@
 或者加入到 `Package.swift`：
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.4.0")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.4.1")
 ```
 
 然後把產品加入 target dependencies：

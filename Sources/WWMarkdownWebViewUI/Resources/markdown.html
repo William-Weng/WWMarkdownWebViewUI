@@ -22,12 +22,7 @@
             const height = document.documentElement.scrollHeight || document.body.scrollHeight;
             window.webkit.messageHandlers.contentHeight.postMessage(height);
         }
-
-        function setTextStyle(color, size) {
-            document.documentElement.style.setProperty('--text', color);
-            document.documentElement.style.setProperty('--font-size', size + 'px');
-        }
-
+        
         function getTextContent() {
             const content = document.getElementById("content");
             return content ? content.innerText : "";

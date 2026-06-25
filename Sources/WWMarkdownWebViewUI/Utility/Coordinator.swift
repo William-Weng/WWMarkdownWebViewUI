@@ -23,7 +23,6 @@ public extension WWMarkdownWebViewUI {
         
         var isPageLoaded = false                // 頁面是否已完成初始載入 => 只有在頁面 ready 後，才可安全呼叫頁面內的 JavaScript 函式
         var lastRenderedMarkdown: String?       // 上一次成功渲染的 Markdown 內容 => 用來避免重複對相同內容進行 render
-        var lastRenderedTextStyle: TextStyle?
         
         init(_ parent: WWMarkdownWebViewUI) {
             self.parent = parent
@@ -86,19 +85,19 @@ extension WWMarkdownWebViewUI.Coordinator {
         }
         
         let markdown = parent.markdown
-        let textStyle = parent.textStyle
         
-        guard force || (markdown != lastRenderedMarkdown) || (textStyle != lastRenderedTextStyle) else { return }
-        guard let payload = Self.makeJSONArgument(markdown) else { return }
+        guard force || (markdown != lastRenderedMarkdown),
+              let payload = Self.makeJSONArgument(markdown)
+        else {
+            return
+        }
         
         let js = """
-        \(textStyle.script);
         window.renderMarkdown(\(payload));
         """
         
         webView.evaluateJavaScript(js)
         lastRenderedMarkdown = markdown
-        lastRenderedTextStyle = textStyle
     }
 }
 
