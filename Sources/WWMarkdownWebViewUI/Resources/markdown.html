@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./github-markdown.css">
+</head>
+
+<body>
+    <article class="markdown-body">
+        <div id="content"></div>
+    </article>
+    <script src="marked.umd.js"></script>
+    <script>
+
+        function renderMarkdown(markdown) {
+            document.getElementById('content').innerHTML = marked.parse(markdown);
+            setTimeout(reportHeight, 0);
+        }
+
+        function reportHeight() {
+            const height = document.documentElement.scrollHeight || document.body.scrollHeight;
+            window.webkit.messageHandlers.contentHeight.postMessage(height);
+        }
+
+        function setTextStyle(color, size) {
+            document.documentElement.style.setProperty('--text', color);
+            document.documentElement.style.setProperty('--font-size', size + 'px');
+        }
+
+        function getTextContent() {
+            const content = document.getElementById("content");
+            return content ? content.innerText : "";
+        }
+
+        function getHtmlContent() {
+            const content = document.getElementById("content");
+            return content ? content.innerHTML : "";
+        }
+
+        window.renderMarkdown = renderMarkdown;
+        window.addEventListener("load", reportHeight);
+    </script>
+</body>
+
+</html>

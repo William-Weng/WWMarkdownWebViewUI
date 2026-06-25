@@ -14,8 +14,9 @@ struct ContentView: View {
 
     let markdown = """
     # WWMarkdownWebViewUI
-    一個輕量級的 Swift Package，使用 `WKWebView` 在 SwiftUI 中渲染 Markdown，支援動態高度，並盡量維持整合簡潔。
     
+    一個輕量級的 Swift Package，使用 `WKWebView` 在 SwiftUI 中渲染 Markdown，支援動態高度，並盡量維持整合簡潔。
+        
     ## ✨ [功能特色](https://peterpanswift.github.io/iphone-bezels/)
 
     1. 透過 `UIViewRepresentable` 將 `WKWebView` 包裝成 SwiftUI View。

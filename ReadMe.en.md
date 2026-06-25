@@ -9,7 +9,7 @@
 [![Swift Package Manager-SUCCESS](https://img.shields.io/badge/Swift_Package_Manager-SUCCESS-blue.svg?style=flat)](https://developer.apple.com/swift/)
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-yellow.svg?style=flat)](https://developer.apple.com/swift/)
 
-A lightweight Swift Package that renders Markdown with `WKWebView` inside SwiftUI, supports dynamic height, and keeps the integration simple.
+A lightweight Swift Package that renders [`Markdown`](https://github.com/markedjs/marked) with [`WKWebView`](https://github.com/sindresorhus/github-markdown-css) inside SwiftUI, supports dynamic height, and keeps the integration simple.
 
 ![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/c4aaf16d-bc4e-4f7a-b705-1ab9bcebd883)
 
@@ -28,7 +28,7 @@ Add the package in Xcode with **File > Add Package Dependencies...** and point i
 Or add it to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.3")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.4.0")
 ```
 
 Then add the product to your target dependencies:

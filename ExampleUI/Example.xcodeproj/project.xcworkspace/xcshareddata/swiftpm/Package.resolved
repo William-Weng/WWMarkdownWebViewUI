@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWMarkdownWebViewUI",
       "state" : {
-        "revision" : "898f37e9cc10b7926857834d207f90a566499bb7",
-        "version" : "0.3.2"
+        "revision" : "9deb6c968eed3913f50d8c2fb17b78e1cd5e3fd6",
+        "version" : "0.3.3"
       }
     }
   ],

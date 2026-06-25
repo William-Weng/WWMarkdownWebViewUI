@@ -9,7 +9,7 @@
 [![Swift Package Manager-SUCCESS](https://img.shields.io/badge/Swift_Package_Manager-SUCCESS-blue.svg?style=flat)](https://developer.apple.com/swift/)
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-yellow.svg?style=flat)](https://developer.apple.com/swift/)
 
-一個輕量級的 Swift Package，使用 `WKWebView` 在 SwiftUI 中渲染 Markdown，支援動態高度，並盡量維持整合簡潔。
+一個輕量級的 Swift Package，使用 [`WKWebView`](https://github.com/sindresorhus/github-markdown-css) 在 SwiftUI 中渲染 [`Markdown`](https://github.com/markedjs/marked)，支援動態高度，並盡量維持整合簡潔。
 
 ![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/c4aaf16d-bc4e-4f7a-b705-1ab9bcebd883)
 
@@ -28,7 +28,7 @@
 或者加入到 `Package.swift`：
 
 ```swift
-.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.3.3")
+.package(url: "https://github.com/William-Weng/WWMarkdownWebViewUI.git", from: "0.4.0")
 ```
 
 然後把產品加入 target dependencies：
