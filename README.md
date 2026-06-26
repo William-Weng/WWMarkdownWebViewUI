@@ -11,7 +11,7 @@
 
 一個輕量級的 Swift Package，使用 [`WKWebView`](https://github.com/sindresorhus/github-markdown-css) 在 SwiftUI 中渲染 [`Markdown`](https://github.com/markedjs/marked)，支援動態高度，並盡量維持整合簡潔。
 
-![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/c4aaf16d-bc4e-4f7a-b705-1ab9bcebd883)
+![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/6f4eb1fe-ad9c-41d0-8e57-01b276883068)
 
 ## ✨ [功能特色](https://peterpanswift.github.io/iphone-bezels/)
 
@@ -63,7 +63,7 @@ struct ContentView: View {
     """
 
     var body: some View {
-        WWMarkdownWebViewUI(markdown: markdown, dynamicHeight: $height)
+        WWMarkdownWebViewUI(markdown: markdown, height: $height)
             .frame(height: height)
             .padding(16)
     }

@@ -11,7 +11,7 @@
 
 A lightweight Swift Package that renders [`Markdown`](https://github.com/markedjs/marked) with [`WKWebView`](https://github.com/sindresorhus/github-markdown-css) inside SwiftUI, supports dynamic height, and keeps the integration simple.
 
-![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/c4aaf16d-bc4e-4f7a-b705-1ab9bcebd883)
+![WWMarkdownWebViewUI](https://github.com/user-attachments/assets/6f4eb1fe-ad9c-41d0-8e57-01b276883068)
 
 ## [✨ Features](https://peterpanswift.github.io/iphone-bezels/)
 
@@ -59,7 +59,7 @@ struct ContentView: View {
     """
 
     var body: some View {
-        WWMarkdownWebViewUI(markdown: markdown, dynamicHeight: $height)
+        WWMarkdownWebViewUI(markdown: markdown, height: $height)
             .frame(height: height)
             .padding(16)
     }
